@@ -91,10 +91,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE      &trans           &trans       &trans    &trans                        &trans  &kp BACKSPACE  &kp DELETE      &trans     &trans
-&kp TAB         &kp PERCENT      &kp AT_SIGN  &kp LBKT  &kp LPAR  &trans      &trans  &trans  &mkp MB1       &kp UP_ARROW    &mkp MB2   &trans
-&kp LEFT_SHIFT  &kp EXCLAMATION  &kp COLON    &kp RBKT  &kp RPAR  &trans      &trans  &trans  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT  &trans
-&trans          &trans           &trans       &trans    &trans    &trans      &trans  &trans                                            &trans
+&kp ESCAPE      &trans           &trans       &trans             &trans                          &trans  &kp BACKSPACE  &kp DELETE      &trans     &trans
+&kp TAB         &kp PERCENT      &kp AT_SIGN  &kp LEFT_BRACKET   &kp LS(N8)  &trans      &trans  &trans  &mkp MB1       &kp UP_ARROW    &mkp MB2   &trans
+&kp LEFT_SHIFT  &kp EXCLAMATION  &kp COLON    &kp RIGHT_BRACKET  &kp LS(N9)  &trans      &trans  &trans  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT  &trans
+&trans          &trans           &trans       &trans             &trans      &trans      &trans  &trans                                            &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
