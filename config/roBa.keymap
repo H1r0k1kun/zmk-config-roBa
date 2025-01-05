@@ -81,20 +81,20 @@
             bindings = <
 &kp Q      &kp W         &kp E         &kp R                        &kp T                                             &kp Y        &kp U  &kp I          &kp O             &kp P
 &kp A      &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))         &mkp MB4       &kp H        &kp J  &lt 5 K        &kp L             &lt 3 MINUS
-&kp Z      &kp X         &kp C         &kp V                        &kp B        &lt 3 AT_SIGN         &mkp MB5       &kp N        &kp M  &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &mt LEFT_SHIFT INT_MUHENKAN  &lt 1 SPACE  &lt 5 INT_HENKAN      &kp BACKSPACE  &lt 2 ENTER                                          &lt 6 LG(TAB)
+&kp Z      &kp X         &kp C         &kp V                        &kp B        &lt 3 LEFT_BRACE      &mkp MB5       &kp N        &kp M  &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &mt LEFT_SHIFT INT_MUHENKAN  &lt 1 SPACE  &lt 5 INT_HENKAN      &kp BACKSPACE  &lt 2 ENTER                                          &lt 6 LS(LC(M))
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
             sensor-bindings = <&scroll_up_down>;
         };
 
         FUNCTION {
             bindings = <
-&kp ESCAPE      &trans           &trans       &trans             &trans                          &trans  &kp BACKSPACE  &kp DELETE      &trans     &trans
-&kp TAB         &kp PERCENT      &kp AT_SIGN  &kp LEFT_BRACKET   &kp LS(N8)  &trans      &trans  &trans  &mkp MB1       &kp UP_ARROW    &mkp MB2   &trans
-&kp LEFT_SHIFT  &kp EXCLAMATION  &kp COLON    &kp RIGHT_BRACKET  &kp LS(N9)  &trans      &trans  &trans  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT  &trans
-&trans          &trans           &trans       &trans             &trans      &trans      &trans  &trans                                            &trans
+&kp ESCAPE      &trans           &trans            &trans             &trans                          &trans  &kp BACKSPACE  &kp DELETE      &trans     &trans
+&kp TAB         &kp PERCENT      &kp LS(NUMBER_2)  &kp LEFT_BRACKET   &kp LS(N8)  &trans      &trans  &trans  &mkp MB1       &kp UP_ARROW    &mkp MB2   &trans
+&kp LEFT_SHIFT  &kp EXCLAMATION  &kp APOS          &kp RIGHT_BRACKET  &kp LS(N9)  &trans      &trans  &trans  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT  &trans
+&trans          &trans           &kp SEMI          &trans             &trans      &trans      &trans  &trans                                            &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -102,10 +102,10 @@
 
         NUM {
             bindings = <
-&kp MINUS          &kp N7        &kp N8        &kp N9        &kp MINUS                                       &trans     &kp BACKSPACE  &kp DELETE  &trans     &trans
-&kp N0             &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS   &kp LC(LA(KP_NUMBER_0))      &trans  &kp PIPE   &mkp MB1       &kp UP      &mkp MB2   &trans
-&mt LEFT_SHIFT N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL  &kp EQUAL                    &trans  &kp UNDER  &kp LEFT       &kp DOWN    &kp RIGHT  &trans
-&trans             &trans        &kp PERIOD    &trans        &trans     &trans                       &trans  &trans                                           &trans
+&kp MINUS          &kp N7        &kp N8        &kp N9        &kp LS(EQUAL)                                       &trans                   &kp BACKSPACE  &kp DELETE  &trans     &trans
+&kp N0             &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LS(SEMI)   &kp LC(LA(KP_NUMBER_0))      &trans  &kp LG(BACKSLASH)        &mkp MB1       &kp UP      &mkp MB2   &trans
+&mt LEFT_SHIFT N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL      &kp LS(EQUAL)                &trans  &kp LS(INTERNATIONAL_1)  &kp LEFT       &kp DOWN    &kp RIGHT  &trans
+&trans             &trans        &kp PERIOD    &trans        &trans         &trans                       &trans  &trans                                                         &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -134,10 +134,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                                   &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans        &trans             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp LG(LEFT)  &kp LG(RIGHT)      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans        &trans             &trans  &trans                          &trans
             >;
         };
 
