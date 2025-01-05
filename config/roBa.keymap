@@ -72,7 +72,7 @@
 &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &mt LEFT_SHIFT INT_MUHENKAN  &lt 1 SPACE  &lt 5 INT_HENKAN      &kp BACKSPACE  &lt 2 ENTER                                &lt 6 LS(LC(M))
             >;
 
-            sensor-bindings = <&inc_dec_kp A B>;
+            sensor-bindings = <&scroll_up_down>;
             sensor-bindings = <&scroll_up_down>;
         };
 
@@ -106,7 +106,7 @@
 &trans  &trans  &trans  &trans  &trans        &trans             &trans  &trans                                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(C_VOLUME_UP) LC(K_VOLUME_DOWN)>;
+            sensor-bindings = <&scroll_up_down>;
             sensor-bindings = <&scroll_up_down>;
         };
 
@@ -128,6 +128,8 @@
 &trans  &trans  &trans  &trans  &kp LG(LEFT)  &kp LG(RIGHT)      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans        &trans             &trans  &trans                          &trans
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_6 {
@@ -137,6 +139,8 @@
 &bt BT_CLR      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader     &trans        &trans        &trans        &trans        &trans
 &bt BT_CLR_ALL  &trans        &trans        &trans        &trans  &trans      &trans          &trans                                                  &trans
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
     };
 };
