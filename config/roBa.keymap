@@ -72,7 +72,7 @@
 &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &mt LEFT_SHIFT INT_MUHENKAN  &lt 1 SPACE  &lt 5 INT_HENKAN      &kp BACKSPACE  &lt 2 ENTER                                &lt 6 LS(LC(M))
             >;
 
-            sensor-bindings = <&new_behavior>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
             sensor-bindings = <&scroll_up_down>;
         };
 
