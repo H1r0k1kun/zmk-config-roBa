@@ -64,6 +64,7 @@
             #binding-cells = <1>;
             display-name = "Toggle Layer Off";
             toggle-mode = "off";
+            tapping-term-ms = <200>;
         };
     };
 
