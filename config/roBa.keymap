@@ -47,6 +47,13 @@
             bindings = <&kp F2 &kp LC(A) &kp BACKSPACE &kp ENTER &kp DOWN_ARROW>;
             label = "JIRA_DATE_DELETE";
         };
+
+        jira_rename: jira_rename {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F2 &kp BACKSPACE &kp BACKSPACE &kp BACKSPACE &kp BACKSPACE &kp BACKSPACE &kp BACKSPACE &kp BACKSPACE &kp BACKSPACE &kp BACKSPACE &kp BACKSPACE &kp BACKSPACE &kp BACKSPACE &kp BACKSPACE &kp BACKSPACE &kp BACKSPACE &kp BACKSPACE &kp BACKSPACE &kp LC(V) &kp ENTER &kp DOWN_ARROW>;
+            label = "JIRA_RENAME";
+        };
     };
 
     keymap {
@@ -66,10 +73,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE      &kp F2           &trans          &trans             &trans                          &trans    &kp BACKSPACE  &kp DELETE      &trans     &trans
-&kp TAB         &kp PERCENT      &kp LEFT_BRACE  &kp RIGHT_BRACKET  &kp LS(N8)  &trans      &trans  &trans    &mkp MB1       &kp UP_ARROW    &mkp MB2   &trans
-&kp LEFT_SHIFT  &kp EXCLAMATION  &kp APOS        &kp BACKSLASH      &kp LS(N9)  &trans      &trans  &kp HOME  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT  &kp END
-&trans          &trans           &kp SEMI        &trans             &trans      &trans      &trans  &trans                                              &trans
+&kp ESCAPE      &kp F2           &trans          &trans             &trans                                     &trans    &kp BACKSPACE  &kp DELETE      &trans     &trans
+&kp TAB         &kp PERCENT      &kp LEFT_BRACE  &kp RIGHT_BRACKET  &kp LS(N8)  &trans      &jira_date_delete  &trans    &mkp MB1       &kp UP_ARROW    &mkp MB2   &trans
+&kp LEFT_SHIFT  &kp EXCLAMATION  &kp APOS        &kp BACKSLASH      &kp LS(N9)  &trans      &jira_rename       &kp HOME  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT  &kp END
+&trans          &trans           &kp SEMI        &trans             &trans      &trans      &trans             &trans                                              &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
