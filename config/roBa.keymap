@@ -60,11 +60,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-        };
+
     };
 
     keymap {
@@ -78,8 +74,7 @@
 &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &mt LEFT_SHIFT INT_MUHENKAN  &lt 1 SPACE  &lt 5 INT_HENKAN       &kp BACKSPACE  &lt 2 ENTER                                &lt 6 LS(LC(M))
             >;
 
-            sensor-bindings = <&scroll_up_down>;
-            sensor-bindings = <&scroll_up_down>;
+
         };
 
         FUNCTION {
@@ -90,7 +85,6 @@
 &trans          &trans           &kp SEMI        &trans             &trans      &trans      &trans             &trans                                              &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
         };
 
         NUM {
@@ -101,7 +95,6 @@
 &trans             &trans        &kp PERIOD    &trans        &trans         &trans                       &trans  &trans                                                         &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
         };
 
         ARROW {
@@ -112,8 +105,7 @@
 &trans  &trans  &trans  &kp F10  &kp F9        &kp F6             &kp F7  &trans                                          &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
-            sensor-bindings = <&scroll_up_down>;
+
         };
 
         MOUSE {
@@ -124,7 +116,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
         };
 
         SCROLL {
@@ -135,7 +126,6 @@
 &trans  &trans  &trans  &trans  &trans        &trans             &trans  &trans                            &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_6 {
@@ -146,7 +136,6 @@
 &bt BT_CLR_ALL  &trans        &trans        &trans        &trans  &trans      &trans          &trans                                                  &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
         };
     };
 };
