@@ -196,8 +196,8 @@
         Mouse {
             bindings = <
 &kp ESCAPE      &kp F2           &trans            &trans             &trans                          &trans    &kp BACKSPACE  &kp DELETE      &trans     &trans
-&kp TAB         &kp PERCENT      &kp LEFT_BRACE    &kp RIGHT_BRACKET  &kp LS(N8)  &trans      &trans  &trans    &mkp MB1       &lt 5 UP_ARROW  &mkp MB2   &trans
-&kp LEFT_SHIFT  &kp EXCLAMATION  &kp LEFT_BRACKET  &kp BACKSLASH      &kp LS(N9)  &trans      &trans  &kp HOME  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT  &kp END
+&kp TAB         &kp PERCENT      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LS(N8)  &trans      &trans  &trans    &mkp MB1       &lt 5 UP_ARROW  &mkp MB2   &trans
+&kp LEFT_SHIFT  &kp EXCLAMATION  &kp APOS          &kp BACKSLASH      &kp LS(N9)  &trans      &trans  &kp HOME  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT  &kp END
 &trans          &trans           &kp SEMI          &trans             &trans      &trans      &trans  &trans                                              &trans
             >;
 
