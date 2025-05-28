@@ -81,6 +81,13 @@
 
             label = "BT4_KD";
         };
+
+        jira_date_del: jira_date_del {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F2 &kp LC(A) &kp DEL &kp ENTER &kp DOWN>;
+            label = "JIRA_DATE_DEL";
+        };
     };
 
     behaviors {
@@ -158,10 +165,10 @@
 
         Mouse {
             bindings = <
-&kp ESCAPE      &kp F2           &trans            &trans             &trans                          &trans    &kp BACKSPACE  &kp DELETE      &trans     &trans
-&kp TAB         &kp PERCENT      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LS(N8)  &trans      &trans  &trans    &mkp MB1       &lt 4 UP_ARROW  &mkp MB2   &trans
-&kp LEFT_SHIFT  &kp EXCLAMATION  &kp APOS          &kp BACKSLASH      &kp LS(N9)  &trans      &trans  &kp HOME  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT  &kp END
-&trans          &trans           &kp SEMI          &trans             &trans      &trans      &trans  &trans                                              &trans
+&kp ESCAPE      &kp F2           &trans            &trans             &trans                                  &trans    &kp BACKSPACE  &kp DELETE      &trans     &trans
+&kp TAB         &kp PERCENT      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LS(N8)  &trans      &jira_date_del  &trans    &mkp MB1       &lt 4 UP_ARROW  &mkp MB2   &trans
+&kp LEFT_SHIFT  &kp EXCLAMATION  &kp APOS          &kp BACKSLASH      &kp LS(N9)  &trans      &trans          &kp HOME  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT  &kp END
+&trans          &trans           &kp SEMI          &trans             &trans      &trans      &trans          &trans                                              &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
