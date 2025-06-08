@@ -14,7 +14,16 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        mb1 {
+            bindings = <&mkp MB1>;
+            key-positions = <18 19>;
+            layers = <2>;
+            timeout-ms = <100>;
+        };
+    };
 
     macros {
         bt0_mac: bt0_mac {
@@ -212,7 +221,7 @@
             bindings = <
 &trans        &trans        &trans        &trans        &trans                                      &bt0_mac  &bt1_ipad  &bt2_ipad  &bt3_msol  &bt4_kd
 &kp NUMBER_0  &kp NUMBER_4  &trans        &trans        &trans  &bt BT_CLR_ALL      &studio_unlock  &trans    &trans     &trans     &trans     &trans
-&bt BT_CLR    &kp N1        &kp NUMBER_2  &kp NUMBER_3  &trans  &trans              &trans          &trans    &trans     &trans     &trans     &trans
+&bt BT_CLR    &kp N1        &kp NUMBER_2  &kp NUMBER_3  &trans  &trans              &trans          &trans    &trans     &trans     &trans     &all_disc
 &trans        &trans        &trans        &trans        &trans  &trans              &trans          &trans                                     &trans
             >;
         };
