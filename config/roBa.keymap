@@ -35,9 +35,9 @@
             bindings =
                 <&tog_off 0 &tog_off 1 &tog_off 2>,
                 <&macro_wait_time 200>,
-                <&bt BT_SEL 0>,
+                <&bt BT_SEL 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>,
                 <&macro_wait_time 500>,
-                <&tog_on 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+                <&tog_on 0>;
 
             label = "bt0_mac";
         };
@@ -48,9 +48,9 @@
             bindings =
                 <&tog_off 0 &tog_off 1 &tog_off 2>,
                 <&macro_wait_time 200>,
-                <&bt BT_SEL 1>,
+                <&bt BT_SEL 1 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>,
                 <&macro_wait_time 500>,
-                <&tog_on 1 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+                <&tog_on 1>;
 
             label = "bt1_ipad";
         };
@@ -61,9 +61,9 @@
             bindings =
                 <&tog_off 0 &tog_off 1 &tog_off 2>,
                 <&macro_wait_time 200>,
-                <&bt BT_SEL 2>,
+                <&bt BT_SEL 2 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4>,
                 <&macro_wait_time 500>,
-                <&tog_on 1 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4>;
+                <&tog_on 1>;
 
             label = "bt2_ipad";
         };
@@ -74,9 +74,9 @@
             bindings =
                 <&tog_off 0 &tog_off 1 &tog_off 2>,
                 <&macro_wait_time 200>,
-                <&bt BT_SEL 3>,
+                <&bt BT_SEL 3 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 4>,
                 <&macro_wait_time 500>,
-                <&tog_on 2 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 4>;
+                <&tog_on 2>;
 
             label = "BT3_MSOL";
         };
@@ -87,9 +87,9 @@
             bindings =
                 <&tog_off 0 &tog_off 1 &tog_off 2>,
                 <&macro_wait_time 200>,
-                <&bt BT_SEL 4>,
+                <&bt BT_SEL 4 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3>,
                 <&macro_wait_time 500>,
-                <&tog_on 2 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3>;
+                <&tog_on 2>;
 
             label = "BT4_KD";
         };
