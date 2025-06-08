@@ -23,6 +23,12 @@
             layers = <2>;
             timeout-ms = <100>;
         };
+
+        mb2 {
+            bindings = <&mkp MB2>;
+            key-positions = <19 20>;
+            layers = <2>;
+        };
     };
 
     macros {
