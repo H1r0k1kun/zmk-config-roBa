@@ -35,7 +35,7 @@
             bindings =
                 <&tog_off 0 &tog_off 1 &tog_off 2>,
                 <&macro_wait_time 200>,
-                <&bt BT_SEL 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>,
+                <&bt BT_SEL 0>,
                 <&macro_wait_time 500>,
                 <&tog_on 0>;
 
@@ -48,7 +48,7 @@
             bindings =
                 <&tog_off 0 &tog_off 1 &tog_off 2>,
                 <&macro_wait_time 200>,
-                <&bt BT_SEL 1 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>,
+                <&bt BT_SEL 1>,
                 <&macro_wait_time 500>,
                 <&tog_on 1>;
 
@@ -61,7 +61,7 @@
             bindings =
                 <&tog_off 0 &tog_off 1 &tog_off 2>,
                 <&macro_wait_time 200>,
-                <&bt BT_SEL 2 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4>,
+                <&bt BT_SEL 2>,
                 <&macro_wait_time 500>,
                 <&tog_on 1>;
 
@@ -74,7 +74,7 @@
             bindings =
                 <&tog_off 0 &tog_off 1 &tog_off 2>,
                 <&macro_wait_time 200>,
-                <&bt BT_SEL 3 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 4>,
+                <&bt BT_SEL 3>,
                 <&macro_wait_time 500>,
                 <&tog_on 2>;
 
@@ -87,7 +87,7 @@
             bindings =
                 <&tog_off 0 &tog_off 1 &tog_off 2>,
                 <&macro_wait_time 200>,
-                <&bt BT_SEL 4 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3>,
+                <&bt BT_SEL 4>,
                 <&macro_wait_time 500>,
                 <&tog_on 2>;
 
@@ -99,6 +99,13 @@
             #binding-cells = <0>;
             bindings = <&kp F2 &kp LC(A) &kp DEL &kp ENTER &kp DOWN>;
             label = "JIRA_DATE_DEL";
+        };
+
+        all_disc: all_disc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            label = "ALL_DISC";
         };
     };
 
