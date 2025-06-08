@@ -14,7 +14,19 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        MB1 {
+            bindings = <&mkp MB1>;
+            key-positions = <18 19>;
+        };
+
+        MB2 {
+            bindings = <&mkp MB2>;
+            key-positions = <19 20>;
+        };
+    };
 
     macros {
         bt0_mac: bt0_mac {
@@ -38,7 +50,7 @@
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 1>,
                 <&macro_wait_time 500>,
-                <&tog_on 1>;
+                <&tog_on 1 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
 
             label = "bt1_ipad";
         };
@@ -51,7 +63,7 @@
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 2>,
                 <&macro_wait_time 500>,
-                <&tog_on 1>;
+                <&tog_on 1 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4>;
 
             label = "bt2_ipad";
         };
@@ -64,7 +76,7 @@
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 3>,
                 <&macro_wait_time 500>,
-                <&tog_on 2>;
+                <&tog_on 2 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 4>;
 
             label = "BT3_MSOL";
         };
@@ -77,7 +89,7 @@
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 4>,
                 <&macro_wait_time 500>,
-                <&tog_on 2>;
+                <&tog_on 2 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3>;
 
             label = "BT4_KD";
         };
