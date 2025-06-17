@@ -32,7 +32,7 @@
 
         app_switch {
             bindings = <&kp F3>;
-            key-positions = <13 12>;
+            key-positions = <13 14>;
             layers = <0>;
             timeout-ms = <100>;
         };
