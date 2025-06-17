@@ -29,6 +29,13 @@
             key-positions = <19 20>;
             layers = <2 0 1>;
         };
+
+        app_switch {
+            bindings = <&kp F3>;
+            key-positions = <13 12>;
+            layers = <0>;
+            timeout-ms = <100>;
+        };
     };
 
     macros {
@@ -154,10 +161,10 @@
 
         Mac {
             bindings = <
-&kp Q         &kp W         &kp E      &kp R                        &kp T                                             &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A         &kp S         &kp D      &kp F                        &kp G        &kp G                 &mkp MB4       &kp H        &kp J  &lt 4 K    &kp L       &lt 3 MINUS
-&kp Z         &kp X         &kp C      &kp V                        &kp B        &kp LG(TAB)           &mkp MB5       &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &mt LEFT_SHIFT INT_MUHENKAN  &lt 3 SPACE  &lt 4 INT_HENKAN      &kp BACKSPACE  &lt 5 ENTER                                &lt 7 LS(LC(M))
+&kp Q           &kp W         &kp E      &kp R                        &kp T                                             &kp Y        &kp U  &kp I      &kp O       &kp P
+&mt LEFT_GUI A  &kp S         &kp D      &kp F                        &kp G        &kp G                 &mkp MB4       &kp H        &kp J  &lt 4 K    &kp L       &lt 3 MINUS
+&kp Z           &kp X         &kp C      &kp V                        &kp B        &kp TAB               &mkp MB5       &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LEFT_GUI    &kp LEFT_ALT  &kp LCTRL  &mt LEFT_SHIFT INT_MUHENKAN  &lt 3 SPACE  &lt 4 INT_HENKAN      &kp BACKSPACE  &lt 5 ENTER                                &lt 7 LS(LC(M))
             >;
 
             sensor-bindings = <&scroll_up_down>;
