@@ -117,13 +117,6 @@
             bindings = <&bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "ALL_DISC";
         };
-
-        app_switch: app_switch {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp>;
-            label = "APP_SWITCH";
-        };
     };
 
     behaviors {
