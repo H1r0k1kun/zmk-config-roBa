@@ -179,10 +179,10 @@
 
         ipad {
             bindings = <
-&kp Q         &kp W         &kp E      &kp R                  &kp T                                            &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A         &kp S         &kp D      &kp F                  &kp G        &kp G              &kp LG(LS(TAB))  &kp H        &kp J  &lt 4 K    &kp L       &lt 8 MINUS
-&kp Z         &kp X         &kp C      &kp V                  &kp B        &lt 0 LG(TAB)      &kp LG(H)        &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &mt LEFT_SHIFT INT_RO  &lt 3 SPACE  &lt 4 INT2         &kp BACKSPACE    &lt 5 ENTER                                &lt 7 LS(LC(M))
+&kp Q         &kp W         &kp E      &kp R                      &kp T                                               &kp Y        &kp U  &kp I      &kp O       &kp P
+&kp A         &kp S         &kp D      &kp F                      &kp G        &kp G                 &kp LG(LS(TAB))  &kp H        &kp J  &lt 4 K    &kp L       &lt 8 MINUS
+&kp Z         &kp X         &kp C      &kp V                      &kp B        &lt 0 LG(TAB)         &kp LG(H)        &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &mt LEFT_SHIFT LANGUAGE_2  &lt 3 SPACE  &lt 4 LANGUAGE_1      &kp BACKSPACE    &lt 5 ENTER                                &lt 7 LS(LC(M))
             >;
 
             sensor-bindings = <&scroll_up_down>;
