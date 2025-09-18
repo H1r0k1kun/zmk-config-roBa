@@ -117,6 +117,13 @@
             bindings = <&bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "ALL_DISC";
         };
+
+        app_switch: app_switch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp>;
+            label = "APP_SWITCH";
+        };
     };
 
     behaviors {
@@ -172,10 +179,10 @@
 
         ipad {
             bindings = <
-&kp Q         &kp W         &kp E      &kp R                     &kp T                                            &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A         &kp S         &kp D      &kp F                     &kp G        &kp G                &kp LG(TAB)    &kp H        &kp J  &lt 4 K    &kp L       &lt 8 MINUS
-&kp Z         &kp X         &kp C      &kp V                     &kp B        &lt 0 LG(TAB)        &kp LG(H)      &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &mt LEFT_SHIFT LC(SPACE)  &lt 3 SPACE  &lt 4 LC(SPACE)      &kp BACKSPACE  &lt 5 ENTER                                &lt 7 LS(LC(M))
+&kp Q         &kp W         &kp E      &kp R                     &kp T                                                                     &kp Y        &kp U  &kp I      &kp O       &kp P
+&kp A         &kp S         &kp D      &kp F                     &kp G        &kp G                &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp H        &kp J  &lt 4 K    &kp L       &lt 8 MINUS
+&kp Z         &kp X         &kp C      &kp V                     &kp B        &lt 0 LG(TAB)        &kp LG(H)                               &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &mt LEFT_SHIFT LC(SPACE)  &lt 3 SPACE  &lt 4 LC(SPACE)      &kp BACKSPACE                           &lt 5 ENTER                                &lt 7 LS(LC(M))
             >;
 
             sensor-bindings = <&scroll_up_down>;
