@@ -223,10 +223,10 @@
 
         Function {
             bindings = <
-&trans  &kp F7  &kp F8  &kp F9   &trans                                   &trans                   &kp BACKSPACE  &kp DELETE    &trans     &trans
-&trans  &kp F4  &kp F5  &kp F6   &trans        &trans             &trans  &kp LG(BACKSLASH)        &mkp MB1       &kp UP_ARROW  &bt1_ipad  &trans
-&trans  &kp F1  &kp F2  &kp F3   &kp LG(LEFT)  &kp LG(RIGHT)      &trans  &kp LS(INTERNATIONAL_1)  &kp LEFT       &kp DOWN      &kp RIGHT  &trans
-&trans  &trans  &trans  &kp F10  &trans        &trans             &trans  &trans                                                           &trans
+&trans  &kp F7  &kp F8  &kp F9   &trans                                      &trans                   &kp BACKSPACE  &kp DELETE    &trans     &trans
+&trans  &kp F4  &kp F5  &kp F6   &trans        &trans             &bt3_msol  &bt4_kd                  &mkp MB1       &kp UP_ARROW  &bt1_ipad  &trans
+&trans  &kp F1  &kp F2  &kp F3   &kp LG(LEFT)  &kp LG(RIGHT)      &trans     &kp LS(INTERNATIONAL_1)  &kp LEFT       &kp DOWN      &kp RIGHT  &trans
+&trans  &trans  &trans  &kp F10  &trans        &trans             &trans     &trans                                                           &trans
             >;
         };
 
@@ -242,7 +242,7 @@
         iPad_tcc {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                             &trans     &kp D  &kp I  &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans         &bt4_kd    &kp S  &kp K  &kp LEFT_SHIFT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &bt3_msol      &bt4_kd    &kp S  &kp K  &kp LEFT_SHIFT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans         &kp LS(X)  &kp N  &kp J  &trans          &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &kp BACKSPACE  &kp ENTER                                &trans
             >;
