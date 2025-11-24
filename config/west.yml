@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: H1r0k1kun
       url-base: https://github.com/H1r0k1kun
+    - name: prospector
+      url-base: https://github.com/t-ogura
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -12,5 +14,9 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: H1r0k1kun
       revision: main
+    - name: prospector-zmk-module
+      remote: prospector
+      revision: v1.0.0
+      path: modules/prospector-zmk-module
   self:
     path: config
