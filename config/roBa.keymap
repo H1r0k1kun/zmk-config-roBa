@@ -198,6 +198,7 @@
 
             // 押している間だけ Layer3 + LEFT_ALT を両方押す
             // 離したら両方離す
+
             bindings =
                 <&macro_press>,
                 <&mo 3 &kp LEFT_ALT>,
@@ -253,6 +254,7 @@
 
             // hold 側: alt_layer3 マクロ
             // tap 側: 通常の &kp（キーは呼び出し側で指定）
+
             bindings = <&alt_layer3>, <&kp>;
         };
     };
@@ -284,10 +286,10 @@
 
         Windows {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                             &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp G                 &mkp MB4       &kp H        &mouse_gesture_kp 0 J  &lt 4 K    &kp L       &lt 6 MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &lt 0 LG(TAB)         &mkp MB5       &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LCTRL         &alt3_ht 0 LEFT_ALT &kp LEFT_WIN  &mt LEFT_SHIFT INT_MUHENKAN  &lt 3 SPACE  &lt 4 INT_HENKAN      &kp BACKSPACE  &lt 5 ENTER                                &lt 7 LS(LC(M))
+&kp Q             &kp W                &kp E         &kp R                        &kp T                                             &kp Y        &kp U                  &kp I      &kp O       &kp P
+&kp A             &kp S                &kp D         &kp F                        &kp G        &kp G                 &mkp MB4       &kp H        &mouse_gesture_kp 0 J  &lt 4 K    &kp L       &lt 6 MINUS
+&mt LEFT_SHIFT Z  &kp X                &kp C         &kp V                        &kp B        &lt 0 LG(TAB)         &mkp MB5       &kp N        &kp M                  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LCTRL         &alt3_ht 0 LEFT_ALT  &kp LEFT_WIN  &mt LEFT_SHIFT INT_MUHENKAN  &lt 3 SPACE  &lt 4 INT_HENKAN      &kp BACKSPACE  &lt 5 ENTER                                                &lt 7 LS(LC(M))
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -298,7 +300,7 @@
 &kp ESCAPE      &kp F2           &trans            &trans             &trans                                  &trans    &kp BACKSPACE  &kp DELETE      &trans     &trans
 &kp TAB         &kp PERCENT      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LS(N8)  &trans      &jira_date_del  &trans    &mkp MB1       &lt 4 UP_ARROW  &mkp MB2   &trans
 &kp LEFT_SHIFT  &kp EXCLAMATION  &kp APOS          &kp BACKSLASH      &kp LS(N9)  &trans      &trans          &kp HOME  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT  &kp END
-&trans          &trans           &kp SEMI          &trans             &trans      &trans      &trans          &trans                                              &trans
+&trans          &trans           &kp SEMI          &kp TAB            &trans      &trans      &trans          &trans                                              &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
