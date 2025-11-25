@@ -19,8 +19,8 @@
     x-threshold = <5 8>;
     y-threshold = <8 5>;
     xy-threshold = <5 8>;
-    require-n-samples = <4>;
-    immediate-snap-threshold = <800>;
+    require-n-samples = <3>;
+    immediate-snap-threshold = <500>;
     lock-duration-ms = <200>;
     lock-for-next-n-events = <10>;
     idle-reset-timeout-ms = <200>;
@@ -225,6 +225,20 @@
             #binding-cells = <1>;
             display-name = "Toggle Layer Off";
             toggle-mode = "off";
+        };
+
+        alt3_ht: alt3_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ALT3_HOLD_TAP";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+
+            // hold 側: Alt+Layer3 マクロ
+            // tap 側: 通常の &kp
+
+            bindings = <&alt_layer3>, <&kp>;
         };
     };
 
