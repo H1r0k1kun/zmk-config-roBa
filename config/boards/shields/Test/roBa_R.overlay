@@ -20,6 +20,10 @@
         status = "okay";
         device = <&trackball>;
 
+        /* ★ ここで mouse-gesture にもイベントを渡す */
+        input-processors = <&zip_mouse_gesture>;
+
+        /* スクロール用は今までどおり scroller ノードで */
         scroller {
             layers = <4>;
             input-processors = <
