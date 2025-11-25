@@ -44,7 +44,7 @@
 
     close_tab {
         pattern = <GESTURE_DOWN GESTURE_RIGHT>;
-        bindings = <&kp alt(F4)>;
+        bindings = <&kp LA(F4)>;
     };
 
     new_tab {
