@@ -12,6 +12,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
+#include <mouse-gesture.dtsi>
+
 &zip_scroll_snap {
     x-threshold = <5 8>;
     y-threshold = <8 5>;
@@ -22,6 +24,45 @@
     lock-for-next-n-events = <10>;
     idle-reset-timeout-ms = <200>;
 };
+
+&zip_mouse_gesture {
+    stroke-size = <150>;
+    enable-eager-mode;
+
+    history_back {
+        pattern = <GESTURE_RIGHT>;
+        bindings = <&kp LA(LEFT)>;
+    };
+
+    history_forward {
+        pattern = <GESTURE_LEFT>;
+        bindings = <&kp LA(RIGHT)>;
+    };
+
+    close_tab {
+        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
+        bindings = <&kp LC(W)>;
+    };
+
+    new_tab {
+        pattern = <GESTURE_DOWN GESTURE_LEFT>;
+        bindings = <&kp LC(T)>;
+    };
+
+    app_switcher {
+        pattern = <GESTURE_DOWN GESTURE_UP>;
+        bindings = <&kp LG(TAB)>;
+    };
+
+    virtual_desktop_prev {
+        pattern = <GESTURE_LEFT GESTURE_DOWN>;
+        bindings = <&kp LG(LC(LEFT))>;
+    };
+
+    virtual_desktop_next {
+        pattern = <GESTURE_RIGHT GESTURE_DOWN>;
+        bindings = <&kp LG(LC(RIGHT))>;
+    };
 
 &mt {
     flavor = "balanced";
