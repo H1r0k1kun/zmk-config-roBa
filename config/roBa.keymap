@@ -8,6 +8,34 @@
 #define SCROLL 5
 #define NUM 6
 
+#include <scroll-snap.dtsi>
+#include <input/processors.dtsi>
+
+&trackball_listener {
+    compatible = "zmk,input-listener";
+    device = <&trackball>;
+
+    scroller {
+        layers = <4>;
+        input-processors = <
+            &zip_xy_to_scroll_mapper
+            &zip_scroll_snap
+        >;
+    };
+};
+
+&zip_scroll_snap {
+    x-threshold = <5 8>;
+    y-threshold = <8 5>;
+    xy-threshold = <5 8>;
+
+    require-n-samples = <10>;
+    immediate-snap-threshold = <1500>;
+    lock-duration-ms = <200>;
+    lock-for-next-n-events = <10>;
+    idle-reset-timeout-ms = <200>;
+};
+
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
