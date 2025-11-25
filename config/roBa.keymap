@@ -73,6 +73,18 @@
     quick-tap-ms = <0>;
 };
 
+&mouse_gesture_kp {
+    tapping-term-ms = <200>;
+    quick-tap-ms = <250>;
+    flavor = "balanced";
+};
+
+&mouse_gesture_mkp {
+    tapping-term-ms = <200>;
+    quick-tap-ms = <250>;
+    flavor = "balanced";
+};
+
 / {
     combos {
         compatible = "zmk,combos";
